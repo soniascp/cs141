@@ -1,0 +1,44 @@
+public class Costs
+{
+   private double laborCost;
+   private double computerCost;
+   private int workHours;
+   /**
+     *Constructor
+     *@param lab The labor cost of the employee.
+     *@param com The cost of the computer.
+     *@param work The working hours of employee.
+     */
+
+   public costs(double lab, double com, int work)
+   {
+       laborCost = lab;
+       computerCost = com;
+       workHours = work;
+   }
+   
+   public void setLabCost(double lab)
+   {
+      laborCost = lab;
+   }
+   public void setComputerCost(double com)
+   {
+      computerCost = com;
+   }
+   public void setWorkHours(int work)
+   {
+      workHours = work;
+   }
+   public double getLabCost()
+   {
+      return laborCost;
+   }
+   public double getComputerCost()
+   {
+      return computerCost;
+   }
+   public int getWorkHours()
+   {
+      return workHours;
+   }
+}
