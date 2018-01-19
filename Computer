@@ -1,0 +1,48 @@
+public class Computer
+{
+   private String make;
+   private String model;
+   private int year;
+   
+
+   /**
+    *Constructor
+    *@param make The make of the computer.
+    *@param mod The model of the computer.
+    *@param yr The year of the computer.
+    */
+    
+    public computer(String mak, String mod, int yr)
+    {
+        make = mak;
+        model = mod;
+        year = yr;
+    }
+    
+    public void setMake(String mak)
+    {
+        make = mak;
+    }
+    public void setModel(String mod)
+    {
+        model = mod;
+    }
+    public void setYear(int yr)
+    {
+        year = yr;
+    }
+    
+    public String getMake()
+    {
+       return make;
+    }
+    public String getModel()
+    {
+       return model;
+    }
+    public String getYear()
+    {
+       return year;
+    }
+
+}
