@@ -1,0 +1,30 @@
+public class Student
+{
+    private String lastName;
+    private String firstName;
+    private char gradeLetter;
+    public Student(String lName, String fName, char grade)
+    {
+        lastName = lName;
+        firstName = fName; 
+        gradeLetter = grade;
+    }
+    public Student(Student object2)
+    {
+        lastName = object2.lastName;
+        firstName = object2.firstName;
+        gradeLetter = object2.gradeLetter;
+    }
+    public void set(String lName, String fName, char grade)
+    {
+        lastName = lName;
+        firstName = fName;
+        gradeLetter = grade;
+    }
+    public String toString()
+    {
+        String str = "\nFirst Name: " + firstName + "\nLast Name: " + lastName +
+                     "\nGrade: " + gradeLetter;
+        return str;
+    }
+}
