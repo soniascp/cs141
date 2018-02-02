@@ -1,0 +1,26 @@
+public class Grades
+{
+    private char hw1;
+    private char test1;
+    public Grades(char hw, char test)
+    {
+        hw1 = hw;
+        test1 = test; 
+    }
+    public Grades(Grades object2)
+    {
+        hw1 = object2.hw1;
+        test1 = object2.test1;
+    }//copy constructor
+    public void set(char hw, char test)
+    {
+        hw1 = hw;
+        test1 = test;
+    }
+    public String toString()
+    {
+        String str = "Homework Grade: " + hw1 +
+                     "\nTest Grade: " + test1;
+        return str;
+    }
+}
