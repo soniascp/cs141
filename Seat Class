@@ -1,0 +1,26 @@
+//ICE- Class Aggregation 2D Array
+//Team Xed
+//Team Members: Cassi Lam, Sonia Carrillo
+public class Seat
+{
+    private String seat;
+    private Student student;
+    public Seat(String se, Student stu)
+    {
+        seat = se;
+        student = new Student(stu);
+    }
+    public String getSeatLocation()
+    {
+        return seat;
+    }
+    public Student getOccupant()
+    {
+        return student;
+    }
+    public String toString()
+    {
+        String str = "Seat: "+ seat + "\nStudent: " + student;
+        return str;
+    }
+}
